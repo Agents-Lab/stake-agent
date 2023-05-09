@@ -29,7 +29,6 @@ Take note of the output ENCRYPTION_KEY and ENCRYPTED_SEED values. You will use t
 Replace the placeholder values in the agent.py script with your actual mnemonic phrase and the generated ENCRYPTION_KEY and ENCRYPTED_SEED values.
 python
 Copy code
-mnemonic_phrase = b"your actual mnemonic phrase here"
 ENCRYPTION_KEY = "your generated encryption key"
 ENCRYPTED_SEED = "your generated encrypted seed"
 Run the agent.py script:

@@ -9,7 +9,6 @@ from lab_agent import LabAgent
 # Set False if you are ready to execute on your main account
 TEST_MODE = True
 # Your mnemonic phrase (replace this with your actual mnemonic phrase)
-mnemonic_phrase = b"you mnemonic phrase here"
 
 # Default
 agent_name = "agentslabautocompounder"
