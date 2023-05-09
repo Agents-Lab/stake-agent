@@ -42,10 +42,12 @@ python3 agent.py
 ## Remotely
 
 Set the environment variables on your remote server or platform (e.g., Heroku):
-makefile
-Copy code
+
+```bash
 ENCRYPTION_KEY = your generated encryption key
 ENCRYPTED_SEED = your generated encrypted seed
+```
+
 Deploy and run the agent.py script on your remote server or platform.
 Agent Configuration
 The agent is designed to be used in a separate thread to avoid blocking the server. It can be run in test mode or main mode, depending on the TEST_MODE variable in the agent.py script.
