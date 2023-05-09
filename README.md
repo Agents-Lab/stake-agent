@@ -2,7 +2,7 @@
 
 This repository contains a Python script that generates an encryption key and an agent script that uses the encrypted mnemonic phrase. The agent can be run locally or remotely with environment variables. Please be aware that if someone gains access to your environment variables (ENCRYPTION_KEY and ENCRYPTED_SEED), your account could be compromised. As an alternative, you may consider storing these variables in a more secure location.
 
-Agent will automatically select all of your validators, withdraw rewards from them, and stake the INITIAL_STAKE amount on first of them. Staking will only occur if your account balance is greater than or equal to the MINIMUM_ON_ACCOUNT amount. If you don't have a validator yet, make at least one stake manually through your wallet.
+Agent will automatically select all of your validators, withdraw rewards from them, and stake the INITIAL_STAKE amount on first of them. Staking will only occur if your account balance is greater than or equal to the MINIMUM_ON_ACCOUNT amount. If you don't have a validator yet, make at least one stake manually through your wallet before running script.
 
 ## Prerequisites
 
