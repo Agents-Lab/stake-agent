@@ -20,7 +20,9 @@ agent_endpoint = os.environ.get("AGENT_ENDPOINT", "http://127.0.0.1:8001/submit"
 agent_port = int(os.environ.get("PORT", 8001))
 
 # Optional
+# Stake amount each time you have money
 INITIAL_STAKE = os.environ.get("INITIAL_STAKE", 1000000000000000000)
+# Minimum amount to have on account to make staking
 MINIMUM_ON_ACCOUNT = os.environ.get("MINIMUM_ON_ACCOUNT", 1000000000000000000)
 
 # MUST BE SET

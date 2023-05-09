@@ -1,6 +1,7 @@
 # Fetch.ai Auto Compounder Agent
 
 This repository contains a Python script that generates an encryption key and an agent script that uses the encrypted mnemonic phrase. The agent can be run locally or remotely with environment variables.
+Agent will automatically select all of your validators, withdraw rewards from them, and stake the INITIAL_STAKE amount on first of them. Staking will only occur if your account balance is greater than or equal to the MINIMUM_ON_ACCOUNT amount. If you don't have a validator yet, make at least one stake manually through your wallet.
 
 ## Prerequisites
 
