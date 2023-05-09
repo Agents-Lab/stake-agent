@@ -10,9 +10,9 @@ from lab_agent import LabAgent
 TEST_MODE = True
 
 # Default
-agent_name = "agentslabautocompounder"
+agent_name = "stake-agent"
 agent_seed = os.environ.get(
-    "AGENT_SEED_PHRASE", "agentslabautocompounder"
+    "AGENT_SEED_PHRASE", "stakeagentseed"
 )  # not important
 agent_endpoint = os.environ.get("AGENT_ENDPOINT", "http://127.0.0.1:8001/submit")
 agent_port = int(os.environ.get("PORT", 8001))
