@@ -154,8 +154,6 @@ class Wallet:
 
             validator = position.validator
             moniker = validator_moniker_map.get(validator, "Unknown")
-            amount = Tools.format_balance(position.amount)
-            reward = Tools.format_balance(position.reward)
             print(f"  Validator: {validator} ({moniker})")
 
             print(f"staking for validator {moniker}...")
