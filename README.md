@@ -16,6 +16,13 @@ Agent will automatically select all of your validators, withdraw rewards from th
 
 ## Generating Encryption Key and Encrypted Mnemonic Seed
 
+Setup your mnemonic phrase in generate_key.py (!!! Do not commit it !!!):
+
+```bash
+# Your mnemonic phrase (replace this with your actual mnemonic phrase)
+mnemonic_phrase = b"Your mnemonic phrase here"
+```
+
 Run the `generate_key.py` script to generate a unique encryption key and an encrypted mnemonic seed.
 
 ```bash
