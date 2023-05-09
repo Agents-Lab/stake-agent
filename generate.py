@@ -12,6 +12,6 @@ mnemonic_phrase = b"Your mnemonic phrase here"
 # Encrypt the mnemonic phrase
 cipher_text = cipher_suite.encrypt(mnemonic_phrase)
 
-# Verify that the environment variables are set
+# Print values
 print(f"ENCRYPTION_KEY = {key}")
 print(f"ENCRYPTED_SEED = {cipher_text}")
