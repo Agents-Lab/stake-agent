@@ -3,6 +3,7 @@ from cryptography.fernet import Fernet
 
 # Generate a unique encryption key
 key = Fernet.generate_key()
+
 # Initialize the Fernet cipher suite with the generated key
 cipher_suite = Fernet(key)
 
