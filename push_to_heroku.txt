@@ -1,0 +1,5 @@
+docker build -t autocompounder-agent .
+heroku container:push web -a=autocompounder-agent
+heroku container:release web -a=autocompounder-agent
+
+# heroku ps:scale web=0 --app autocompounder-agent

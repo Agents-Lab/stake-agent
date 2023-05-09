@@ -1,2 +1,65 @@
-# stake-agent
-Stake Agent - an automated cryptocurrency staking management agent using encrypted mnemonic phrases for security. Supports local and remote deployment with environment variables.
+# Auto Compounder Agent
+
+This repository contains a Python script that generates an encryption key and an agent script that uses the encrypted mnemonic phrase. The agent can be run locally or remotely with environment variables.
+
+## Prerequisites
+
+1. Python 3.6 or higher
+2. Install required packages:
+
+   ```bash
+   pip install -r requirements.txt
+
+
+   ```
+
+## Generating Encryption Key and Encrypted Mnemonic Seed
+
+Run the `generate_key.py` script to generate a unique encryption key and an encrypted mnemonic seed.
+
+```bash
+python3 generate_key.py
+```
+
+Take note of the output ENCRYPTION_KEY and ENCRYPTED_SEED values. You will use these in the next step.
+
+## Running the Agent Locally
+
+Replace the placeholder values in the agent.py script with your actual mnemonic phrase and the generated ENCRYPTION_KEY and ENCRYPTED_SEED values.
+python
+Copy code
+mnemonic_phrase = b"your actual mnemonic phrase here"
+ENCRYPTION_KEY = "your generated encryption key"
+ENCRYPTED_SEED = "your generated encrypted seed"
+Run the agent.py script:
+
+```bash
+python3 agent.py
+```
+
+## Remotely
+
+Set the environment variables on your remote server or platform (e.g., Heroku):
+makefile
+Copy code
+ENCRYPTION_KEY = your generated encryption key
+ENCRYPTED_SEED = your generated encrypted seed
+Deploy and run the agent.py script on your remote server or platform.
+Agent Configuration
+The agent is designed to be used in a separate thread to avoid blocking the server. It can be run in test mode or main mode, depending on the TEST_MODE variable in the agent.py script.
+
+```bash
+TEST_MODE = True # Set to False if you are ready to execute on your main account
+```
+
+When running the agent in test mode, it will use the test network configuration. In main mode, it will use the main network configuration.
+
+```bash
+ledger = (
+LedgerClient(NetworkConfig.fetchai_dorado_testnet())
+if TEST_MODE
+else LedgerClient(NetworkConfig.fetchai_mainnet())
+)
+```
+
+You can include this README file in your Git repository to guide users on how to generate the encryption key and run the agent script both locally and remotely. The agent is designed to run in a separate thread, so it won't block the server.
