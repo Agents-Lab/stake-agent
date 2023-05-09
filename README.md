@@ -1,4 +1,4 @@
-# Auto Compounder Agent
+# Fetch.ai Auto Compounder Agent
 
 This repository contains a Python script that generates an encryption key and an agent script that uses the encrypted mnemonic phrase. The agent can be run locally or remotely with environment variables.
 
